@@ -4,6 +4,10 @@
 
 Author: Víctor Andrés Gómez López
 
+This project is part of the author's personal portfolio and is also shared as an ADAPTY case study for gyms.
+
+Dataset on Kaggle: https://www.kaggle.com/datasets/vctorandrsgmezlpez/synthetic-gym-membership-relational
+
 ![Churn ROC AUC across all variants](figures/fig1_churn_auc.png)
 
 ## Headline findings
@@ -256,7 +260,7 @@ make_figures.py    charts in figures/
 data/              synthetic tables (Parquet and CSV.gz)
 results/           summary JSON files of both experiments
 figures/           PNG charts
-kaggle_dataset.md, dataset-metadata.json   dataset card for a later Kaggle upload
+kaggle_dataset.md, dataset-metadata.json   dataset card for the Kaggle upload
 ```
 
 ## License
