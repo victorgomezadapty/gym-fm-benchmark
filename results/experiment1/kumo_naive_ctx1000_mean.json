@@ -1,0 +1,51 @@
+{
+  "backend": "nvidia",
+  "anchor": "2026-07-01",
+  "n": 300,
+  "lightgbm_churn_same_members": {
+    "roc_auc": 0.7349,
+    "pr_auc": 0.5676,
+    "precision_top10": 0.7,
+    "base_rate": 0.1767
+  },
+  "lightgbm_revenue_30d_same_members": {
+    "mae": 373.25,
+    "mae_naive_mean": 804.09,
+    "truth_mean": 533.56,
+    "pred_mean": 399.88,
+    "mae_predict_zero": 533.56
+  },
+  "lightgbm_visits_30d_same_members": {
+    "mae": 4.67,
+    "mae_naive_mean": 6.01,
+    "truth_mean": 7.98,
+    "pred_mean": 6.6,
+    "mae_predict_zero": 7.98
+  },
+  "context_rows": 1000,
+  "prediction_statistic": "mean",
+  "kumo_churn_30d": {
+    "roc_auc": 0.537,
+    "pr_auc": 0.1991,
+    "precision_top10": 0.2333,
+    "base_rate": 0.1767,
+    "seconds": 23.1,
+    "scored": 300
+  },
+  "kumo_revenue_30d": {
+    "mae": 837.35,
+    "mae_naive_mean": 804.09,
+    "truth_mean": 533.56,
+    "pred_mean": 480.65,
+    "seconds": 29.2,
+    "scored": 300
+  },
+  "kumo_visits_30d": {
+    "mae": 5.44,
+    "mae_naive_mean": 6.01,
+    "truth_mean": 7.98,
+    "pred_mean": 7.7,
+    "seconds": 29.4,
+    "scored": 300
+  }
+}

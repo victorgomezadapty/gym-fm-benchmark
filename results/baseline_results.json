@@ -1,0 +1,28 @@
+{
+  "n_train": 18831,
+  "n_test": 8666,
+  "test_churn_rate": 0.1916,
+  "logistic_regression": {
+    "roc_auc": 0.692,
+    "pr_auc": 0.4492,
+    "precision_top10": 0.5681
+  },
+  "lightgbm": {
+    "roc_auc": 0.6961,
+    "pr_auc": 0.5141,
+    "precision_top10": 0.6536
+  },
+  "naive_days_since_visit": {
+    "roc_auc": 0.6587,
+    "pr_auc": 0.3377,
+    "precision_top10": 0.4607
+  },
+  "lightgbm_top_features": [
+    "days_to_contract_end",
+    "tenure_days",
+    "days_since_visit",
+    "visits_90d",
+    "trend",
+    "age"
+  ]
+}

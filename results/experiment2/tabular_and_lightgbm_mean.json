@@ -1,0 +1,172 @@
+{
+  "test_members": 300,
+  "anchor": "2026-07-01",
+  "train_rows_full": 24044,
+  "churn_30d": {
+    "LGB_full": {
+      "roc_auc": 0.7197,
+      "pr_auc": 0.5607,
+      "precision_top10": 0.7333,
+      "n": 300
+    },
+    "context": {
+      "rows": 2981,
+      "anchors": 39,
+      "label_agreement_with_lgb_table": 1.0,
+      "in_lgb_table": 1.0
+    },
+    "R_multi": {
+      "error": "HTTP 422: {\"type\":\"/problems/unsupported-shape\",\"status\":422,\"title\":\"Unsupported shape\",\"detail\":\"context.instance_table.rows has 2981; maximum is 1000.\",\"code\":\"UNSUPPORTED_SHAPE\",\"invalid_params\":[{\"name\":\"context.instance_table.rows\",\"reason\":\"Kumo Relational v2.1 fast mode supports at most 1000 context r"
+    },
+    "R_feat": {
+      "error": "HTTP 422: {\"type\":\"/problems/unsupported-shape\",\"status\":422,\"title\":\"Unsupported shape\",\"detail\":\"context.instance_table.rows has 2981; maximum is 1000.\",\"code\":\"UNSUPPORTED_SHAPE\",\"invalid_params\":[{\"name\":\"context.instance_table.rows\",\"reason\":\"Kumo Relational v2.1 fast mode supports at most 1000 context r"
+    },
+    "LGB_same": {
+      "roc_auc": 0.7216,
+      "pr_auc": 0.5232,
+      "precision_top10": 0.7,
+      "n": 300,
+      "train_rows": 2981
+    },
+    "T_same": {
+      "roc_auc": 0.7107,
+      "pr_auc": 0.5427,
+      "precision_top10": 0.7,
+      "n": 300
+    },
+    "T_10k": {
+      "roc_auc": 0.7216,
+      "pr_auc": 0.5563,
+      "precision_top10": 0.7,
+      "n": 300
+    }
+  },
+  "revenue_30d": {
+    "LGB_full": {
+      "mae": 381.07,
+      "pred_mean": 404.04,
+      "truth_mean": 533.56,
+      "n": 300
+    },
+    "context": {
+      "rows": 2981,
+      "anchors": 39,
+      "label_agreement_with_lgb_table": 1.0,
+      "in_lgb_table": 1.0
+    },
+    "R_multi": {
+      "error": "HTTP 422: {\"type\":\"/problems/unsupported-shape\",\"status\":422,\"title\":\"Unsupported shape\",\"detail\":\"context.instance_table.rows has 2981; maximum is 1000.\",\"code\":\"UNSUPPORTED_SHAPE\",\"invalid_params\":[{\"name\":\"context.instance_table.rows\",\"reason\":\"Kumo Relational v2.1 fast mode supports at most 1000 context r"
+    },
+    "R_feat": {
+      "error": "HTTP 422: {\"type\":\"/problems/unsupported-shape\",\"status\":422,\"title\":\"Unsupported shape\",\"detail\":\"context.instance_table.rows has 2981; maximum is 1000.\",\"code\":\"UNSUPPORTED_SHAPE\",\"invalid_params\":[{\"name\":\"context.instance_table.rows\",\"reason\":\"Kumo Relational v2.1 fast mode supports at most 1000 context r"
+    },
+    "LGB_same": {
+      "mae": 448.71,
+      "pred_mean": 283.5,
+      "truth_mean": 533.56,
+      "n": 300,
+      "train_rows": 2981
+    },
+    "T_same": {
+      "mae": 583.92,
+      "pred_mean": 624.53,
+      "truth_mean": 533.56,
+      "n": 300
+    },
+    "T_10k": {
+      "mae": 558.87,
+      "pred_mean": 630.76,
+      "truth_mean": 533.56,
+      "n": 300
+    }
+  },
+  "visits_30d": {
+    "LGB_full": {
+      "mae": 4.68,
+      "pred_mean": 6.58,
+      "truth_mean": 7.98,
+      "n": 300
+    },
+    "context": {
+      "rows": 2981,
+      "anchors": 39,
+      "label_agreement_with_lgb_table": 1.0,
+      "in_lgb_table": 1.0
+    },
+    "R_multi": {
+      "error": "HTTP 422: {\"type\":\"/problems/unsupported-shape\",\"status\":422,\"title\":\"Unsupported shape\",\"detail\":\"context.instance_table.rows has 2981; maximum is 1000.\",\"code\":\"UNSUPPORTED_SHAPE\",\"invalid_params\":[{\"name\":\"context.instance_table.rows\",\"reason\":\"Kumo Relational v2.1 fast mode supports at most 1000 context r"
+    },
+    "R_feat": {
+      "error": "HTTP 422: {\"type\":\"/problems/unsupported-shape\",\"status\":422,\"title\":\"Unsupported shape\",\"detail\":\"context.instance_table.rows has 2981; maximum is 1000.\",\"code\":\"UNSUPPORTED_SHAPE\",\"invalid_params\":[{\"name\":\"context.instance_table.rows\",\"reason\":\"Kumo Relational v2.1 fast mode supports at most 1000 context r"
+    },
+    "LGB_same": {
+      "mae": 4.92,
+      "pred_mean": 6.76,
+      "truth_mean": 7.98,
+      "n": 300,
+      "train_rows": 2981
+    },
+    "T_same": {
+      "mae": 4.87,
+      "pred_mean": 7.98,
+      "truth_mean": 7.98,
+      "n": 300
+    },
+    "T_10k": {
+      "mae": 4.71,
+      "pred_mean": 7.85,
+      "truth_mean": 7.98,
+      "n": 300
+    }
+  },
+  "latency": {
+    "R_multi_churn_30d": {
+      "seconds": 3.0,
+      "payload_mb": 9.1
+    },
+    "R_feat_churn_30d": {
+      "seconds": 3.4,
+      "payload_mb": 9.5
+    },
+    "T_same_churn_30d": {
+      "seconds": 1.1,
+      "payload_mb": 0.4
+    },
+    "T_10k_churn_30d": {
+      "seconds": 1.9,
+      "payload_mb": 1.2
+    },
+    "R_multi_revenue_30d": {
+      "seconds": 3.6,
+      "payload_mb": 9.1
+    },
+    "R_feat_revenue_30d": {
+      "seconds": 3.8,
+      "payload_mb": 9.5
+    },
+    "T_same_revenue_30d": {
+      "seconds": 2.3,
+      "payload_mb": 0.4
+    },
+    "T_10k_revenue_30d": {
+      "seconds": 1.9,
+      "payload_mb": 1.2
+    },
+    "R_multi_visits_30d": {
+      "seconds": 3.6,
+      "payload_mb": 9.1
+    },
+    "R_feat_visits_30d": {
+      "seconds": 3.3,
+      "payload_mb": 9.5
+    },
+    "T_same_visits_30d": {
+      "seconds": 2.2,
+      "payload_mb": 0.4
+    },
+    "T_10k_visits_30d": {
+      "seconds": 2.4,
+      "payload_mb": 1.2
+    }
+  }
+}

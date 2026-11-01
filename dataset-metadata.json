@@ -1,0 +1,19 @@
+{
+  "title": "Synthetic Gym Membership Relational Dataset",
+  "subtitle": "3,000 synthetic members: visits, payments, contracts and PT sessions",
+  "id": "vctorandrsgmezlpez/synthetic-gym-membership-relational",
+  "licenses": [{"name": "CC-BY-4.0"}],
+  "keywords": ["business", "tabular", "time series analysis", "classification", "regression"],
+  "description": "See kaggle_dataset.md. Fully synthetic gym data (no real records), 2023-01 to 2026-08, eight related tables for churn, revenue and visit prediction.",
+  "resources": [
+    {"path": "members.csv.gz", "description": "Members: join date, age, home club, gender, corporate flag"},
+    {"path": "plans.csv.gz", "description": "Membership plans and net prices in SAR"},
+    {"path": "contracts.csv.gz", "description": "Membership contracts with start and end dates"},
+    {"path": "payments.csv.gz", "description": "Payments with net, VAT and gross amounts, method, refunds"},
+    {"path": "visits.csv.gz", "description": "Turnstile swipes, Allowed or Denied with reason"},
+    {"path": "trainers.csv.gz", "description": "Personal trainers, pseudonymous"},
+    {"path": "pt_packages.csv.gz", "description": "Personal training packages bought"},
+    {"path": "pt_sessions.csv.gz", "description": "Personal training sessions, completed or cancelled"},
+    {"path": "churn_features.parquet", "description": "Monthly feature table with 30 day churn label"}
+  ]
+}

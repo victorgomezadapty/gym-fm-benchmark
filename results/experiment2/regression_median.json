@@ -1,0 +1,129 @@
+{
+  "test_members": 300,
+  "anchor": "2026-07-01",
+  "train_rows_full": 24044,
+  "revenue_30d": {
+    "LGB_full": {
+      "mae": 381.07,
+      "pred_mean": 404.04,
+      "truth_mean": 533.56,
+      "n": 300
+    },
+    "context": {
+      "rows": 2981,
+      "anchors": 39,
+      "label_agreement_with_lgb_table": 1.0,
+      "in_lgb_table": 1.0
+    },
+    "R_multi": {
+      "mae": 492.51,
+      "pred_mean": 97.18,
+      "truth_mean": 533.56,
+      "n": 300
+    },
+    "R_feat": {
+      "mae": 421.92,
+      "pred_mean": 224.09,
+      "truth_mean": 533.56,
+      "n": 300
+    },
+    "LGB_same": {
+      "mae": 448.71,
+      "pred_mean": 283.5,
+      "truth_mean": 533.56,
+      "n": 300,
+      "train_rows": 2981
+    },
+    "T_same": {
+      "mae": 415.62,
+      "pred_mean": 556.19,
+      "truth_mean": 533.56,
+      "n": 300
+    },
+    "T_10k": {
+      "mae": 438.34,
+      "pred_mean": 634.25,
+      "truth_mean": 533.56,
+      "n": 300
+    }
+  },
+  "visits_30d": {
+    "LGB_full": {
+      "mae": 4.68,
+      "pred_mean": 6.58,
+      "truth_mean": 7.98,
+      "n": 300
+    },
+    "context": {
+      "rows": 2981,
+      "anchors": 39,
+      "label_agreement_with_lgb_table": 1.0,
+      "in_lgb_table": 1.0
+    },
+    "R_multi": {
+      "mae": 4.91,
+      "pred_mean": 6.9,
+      "truth_mean": 7.98,
+      "n": 300
+    },
+    "R_feat": {
+      "mae": 4.71,
+      "pred_mean": 6.95,
+      "truth_mean": 7.98,
+      "n": 300
+    },
+    "LGB_same": {
+      "mae": 4.92,
+      "pred_mean": 6.76,
+      "truth_mean": 7.98,
+      "n": 300,
+      "train_rows": 2981
+    },
+    "T_same": {
+      "mae": 4.76,
+      "pred_mean": 6.73,
+      "truth_mean": 7.98,
+      "n": 300
+    },
+    "T_10k": {
+      "mae": 4.61,
+      "pred_mean": 6.75,
+      "truth_mean": 7.98,
+      "n": 300
+    }
+  },
+  "latency": {
+    "R_multi_revenue_30d": {
+      "seconds": 15.2,
+      "payload_mb": 9.1
+    },
+    "R_feat_revenue_30d": {
+      "seconds": 15.6,
+      "payload_mb": 9.5
+    },
+    "T_same_revenue_30d": {
+      "seconds": 2.6,
+      "payload_mb": 0.4
+    },
+    "T_10k_revenue_30d": {
+      "seconds": 1.6,
+      "payload_mb": 1.2
+    },
+    "R_multi_visits_30d": {
+      "seconds": 17.0,
+      "payload_mb": 9.1
+    },
+    "R_feat_visits_30d": {
+      "seconds": 17.4,
+      "payload_mb": 9.5
+    },
+    "T_same_visits_30d": {
+      "seconds": 1.0,
+      "payload_mb": 0.4
+    },
+    "T_10k_visits_30d": {
+      "seconds": 1.6,
+      "payload_mb": 1.2
+    }
+  }
+}
