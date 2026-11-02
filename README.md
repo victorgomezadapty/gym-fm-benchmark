@@ -6,7 +6,7 @@ Author: Víctor Andrés Gómez López
 
 This project is part of the author's personal portfolio and is also shared as an ADAPTY case study for gyms.
 
-Dataset on Kaggle: https://www.kaggle.com/datasets/vctorandrsgmezlpez/synthetic-gym-membership-relational
+Dataset on Kaggle: https://www.kaggle.com/datasets/vctorandrsgmezlpez/synthetic-gym-membership-relational-dataset
 
 ![Churn ROC AUC across all variants](figures/fig1_churn_auc.png)
 

@@ -1,7 +1,7 @@
 {
   "title": "Synthetic Gym Membership Relational Dataset",
   "subtitle": "3,000 synthetic members: visits, payments, contracts and PT sessions",
-  "id": "vctorandrsgmezlpez/synthetic-gym-membership-relational",
+  "id": "vctorandrsgmezlpez/synthetic-gym-membership-relational-dataset",
   "licenses": [{"name": "CC-BY-4.0"}],
   "keywords": ["business", "tabular", "time series analysis", "classification", "regression"],
   "description": "See kaggle_dataset.md. Fully synthetic gym data (no real records), 2023-01 to 2026-08, eight related tables for churn, revenue and visit prediction.",
